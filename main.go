@@ -9,8 +9,7 @@ import (
 
 var usage string = `usage: exclude [FORBIDDEN file] [INPUT file]
 
-Iterates though the lines in INPUT, and prints the lines that aren't also in
-FORBIDDEN to stdout.`
+Prints out the lines in INPUT, excluding those also in FORBIDDEN.`
 
 func main() {
 	flag.Parse()
